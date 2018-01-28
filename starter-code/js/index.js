@@ -1,13 +1,16 @@
 function deleteItem(e){
-
+  var item = e.currentTarget.parentNode.parentNode;
+  var container = document.getElementById("container");
+  container.removeChild(item);
 }
+
 
 function getPriceByProduct(itemNode){
 
 }
 
 function updatePriceByProduct(productPrice, index){
-
+  
 }
 
 function getTotalPrice() {
@@ -50,3 +53,7 @@ window.onload = function(){
     deleteButtons[i].onclick = deleteItem;
   }
 };
+
+
+
+// var price = [0]
